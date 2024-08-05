@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Logger",
+    "version": "1.0",
+    "description": "Logs textarea changes and send-button state on ChatGPT.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://chatgpt.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
